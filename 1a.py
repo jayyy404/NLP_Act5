@@ -5,7 +5,7 @@ from collections import Counter
 topics = ["Harry Potter", "Game of Thrones", "COVID-19", "Artificial Intelligence", "Machine Learning"]
 documents = []
 
-# Fetch Wikipedia summaries safely
+
 for topic in topics:
     try:
         summary = wikipedia.summary(topic, sentences=2, auto_suggest=False)
@@ -39,7 +39,7 @@ def compute_tf(doc_tokens, vocabulary):
 
 tf_vectors = [compute_tf(doc, vocabulary) for doc in tokenized_docs]
 
-# Display matrix
+
 print("\nTerm-Document Matrix (Raw Frequency):")
 print("Term".ljust(20), end="")
 for i in range(len(documents)):

@@ -1,2 +1,1 @@
-
-for term in vocabulary:
+Wor

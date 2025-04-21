@@ -95,8 +95,8 @@ similarities.sort(key=lambda x: x[1], reverse=True)
 # Print all pairwise similarities
 print("\nCosine Similarity between document pairs:")
 for (i, j), sim in similarities:
-    print(f"Doc{i+1} ↔ Doc{j+1}: {sim:.4f}")
+    print(f"Doc{i+1} with Doc{j+1}: {sim:.4f}")
 
 # Most similar pair
 most_similar = similarities[0]
-print(f"\n🔥 Most similar documents are Doc{most_similar[0][0]+1} and Doc{most_similar[0][1]+1} with similarity = {most_similar[1]:.4f}")
+print(f"\n Most similar documents are Doc{most_similar[0][0]+1} and Doc{most_similar[0][1]+1} with similarity = {most_similar[1]:.4f}")
