@@ -1,0 +1,2 @@
+
+for term in vocabulary:
